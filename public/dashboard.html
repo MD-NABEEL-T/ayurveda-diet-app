@@ -1,0 +1,15 @@
+<button id="logoutBtn">Logout</button>
+
+<script type="module">
+import { logout } from "./js/auth.js";
+
+document.getElementById("logoutBtn").addEventListener("click", logout);
+
+// Display user info
+const user = JSON.parse(localStorage.getItem("user"));
+if (user) {
+  document.getElementById("username").textContent = user.name || user.email;
+} else {
+  window.location.href = "index.html";
+}
+</script>
