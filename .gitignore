@@ -1,0 +1,11 @@
+# Ignore node modules
+node_modules/
+
+# Ignore env files
+.env
+
+# Firebase debug logs
+firebase-debug.log
+
+# OS files
+.DS_Store
